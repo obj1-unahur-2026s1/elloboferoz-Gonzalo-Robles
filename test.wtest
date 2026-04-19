@@ -1,0 +1,24 @@
+import loboFeroz.*
+import personajes.*
+import comidas.*
+import historia.*
+
+describe "Pruebas de la historia del Lobo" {
+
+	test "El lobo empieza con peso 10 y no está saludable" {
+		assert.equals(10, feroz.peso())
+		assert.notThat(feroz.estaSaludable())
+	}
+	
+	test "Si el cazador asusta al lobo, vuelve a su peso inicial" {
+		historia.transcurrir()
+		cazador.asustarA(feroz)
+		assert.equals(10, feroz.peso())
+	}
+
+    	test "Luego dela historia completa con susto incluido, el peso vuelve a ser 10" {
+		historia.transcurrir()
+		assert.equals(10, feroz.peso()) 
+	}
+
+}
