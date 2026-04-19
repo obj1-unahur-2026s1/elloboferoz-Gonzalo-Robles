@@ -16,13 +16,13 @@ object caperucita {
 
 object abuelita {
 	method peso() {
-		return 50
+		return 50.0
 	}
 }
 
 object cazador {
 	method peso() {
-		return 80
+		return 80.0
 	}
 	method asustarA(lobo) { 
 		lobo.sufrirCrisis() 

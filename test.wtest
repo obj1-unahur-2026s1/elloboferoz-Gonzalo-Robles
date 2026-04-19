@@ -10,6 +10,7 @@ describe "Pruebas de la historia del Lobo" {
 		assert.notThat(feroz.estaSaludable())
 	}
 	
+	
 	test "Si el cazador asusta al lobo, vuelve a su peso inicial" {
 		historia.transcurrir()
 		cazador.asustarA(feroz)
@@ -20,5 +21,19 @@ describe "Pruebas de la historia del Lobo" {
 		historia.transcurrir()
 		assert.equals(10, feroz.peso()) 
 	}
+
+
+    	test "El lobo le roba canasta, pesa mas?" {
+        feroz.robarA(caperucita)
+		assert.equals(11.2, feroz.peso())
+	}
+    
+    test "Verificar salud en final donde se come a todos" {
+    historia.finalDondeGanaElLobo()
+    
+    assert.equals(29.1, feroz.peso())
+    assert.that(feroz.estaSaludable())
+    }
+
 
 }

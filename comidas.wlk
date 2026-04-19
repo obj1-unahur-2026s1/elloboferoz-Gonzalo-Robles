@@ -6,7 +6,7 @@ object manzana {
 }
 
 object nada {
-	method peso() = 0
+	method peso() = 0.0
 }
 
 object canasta {
@@ -16,5 +16,5 @@ object canasta {
 }
 
 object hamburguesa {
-	method peso() = 20
+	method peso() = 20.0
 }

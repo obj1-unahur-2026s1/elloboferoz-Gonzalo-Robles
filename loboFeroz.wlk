@@ -2,7 +2,7 @@ import personajes.*
 import comidas.*
 
 object feroz {
-	var peso = 10
+	var peso = 10.0
 	var carga = nada
 	
 	method peso() {
@@ -18,7 +18,7 @@ object feroz {
 }
 	
 	method sufrirCrisis() { 
-    peso = 10 
+    peso = 10.0
   }
 	
 	method comer(comida) {
@@ -32,4 +32,6 @@ object feroz {
 	method robarA(victima) {
 		carga = victima.soltarCarga()
 	}
+
+  
 }

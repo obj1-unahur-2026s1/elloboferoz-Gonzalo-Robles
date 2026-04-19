@@ -24,5 +24,18 @@ object historia {
 
 		// 7. Aparece el cazador y lo asusta
 		cazador.asustarA(feroz)
+    // 8. final alternativo 
+    feroz.robarA(caperucita)
 	}
+  // LOBO CON MUCHO HAMBRE!!!!
+  method finalDondeGanaElLobo() {
+    feroz.correr()
+    feroz.correr()
+    feroz.comer(abuelita)
+    canasta.perderManzana() 
+    feroz.comer(caperucita) 
+    feroz.comer(cazador)    
+}
+
+  
 }
